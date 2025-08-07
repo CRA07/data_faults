@@ -3,6 +3,7 @@ import openpyxl
 import os
 from datetime import datetime
 
+
 app = Flask(__name__)
 EXCEL_FILE = "brak_report.xlsx"
 
@@ -48,4 +49,5 @@ def webhook():
 
 if __name__ == "__main__":
     init_excel()
+
     app.run(port=2283)
